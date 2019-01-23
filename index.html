@@ -7,6 +7,14 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    
+    <!-- footer -->
+
+    	<link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+    <link rel="stylesheet" href="css/demo.css">
+    	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 
     <title>Derek Dang's Website</title>
     <style>
@@ -24,10 +32,12 @@
         }
       .bg {
         /* The image used */
-        background-image: url("img/kelowna3.jpg");
+        background-image: url("img/af_kelowna.jpg");
 
         /* Full height */
         height: 100%; 
+        opacity: 1;
+            animation: fade 3s linear;
 
         /* Center and scale the image nicely */
         background-repeat: no-repeat;
@@ -39,11 +49,6 @@
         color:whitesmoke;
         text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
       }
-      .jumbotron{
-        background-image: url(img/beach.jpg);
-        background-size: cover;
-        min-height: 600px;
-      }
       .carousel-control-prev-icon {
           background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#c900ff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
       }
@@ -54,9 +59,33 @@
       #selfie{
         width:500px;
         display:inline-block;
+        opacity: 1;
+            animation: fade 3s linear;
       }
+      #latte{
+        width:200px;
+        display:inline-block;
+        opacity: 1;
+            animation: fade 3s linear;
+      }
+
+
+        @keyframes fade {
+          0% { opacity: 0 }
+          100% { opacity: 1}
+        }
       .container{
          padding-top: 65px; 
+      }
+      figure {
+        display: inline-block;
+        text-align: center;
+        margin: 5px; /* adjust as needed */
+      }
+      figure img {
+        vertical-align: top;
+        height:75px;
+        width:75px;
       }
     </style>
   </head>
@@ -113,7 +142,7 @@
             Hello world! I'm Derek Dang and I am a Computer System Technology Co-op Student with a BASc in Chemical Engineering.
             <br>
             <br>
-            I am a motivated individual who enjoys tackling on new challenges. Often, I see myself learning a new language or working on a new project. Sometimes on my own, other times I work in a team.
+            I am a motivated individual who enjoys tackling on new challenges. Often, I see myself learning a new language or working on a new project. Sometimes on my own or with my coding partner Latte. Other times I work in a team of random people or friends.
             <br>
             <br>
             One of my biggest highlights is my ability to learn and express myself. I'm not afraid to be wrong and I welcome honest feedback. With this, I'm able to thrive and work in a variety of teams and adapt to different personalities and culture.
@@ -122,18 +151,34 @@
             
             <strong>Why Computer Science?</strong>
             <br>
-            I wanted to work somewhere, where my creativity can full manifest. I enjoyed learning about how new technologies are rising and the infinite potential for its growth. With all that in mind, I knew I had to change course and begin my journey to becoming a Software Engineer. 
+            I wanted to work somewhere, where my creativity can fully manifest. I enjoyed learning about new technologies and the infinite potential for its growth. With all that in mind, I knew I had to change course and begin my journey to become a Software Engineer. 
             <br>
-<!--
-            I also have the most adorable dog.  
             <br>
--->
+            <br>
+
+            
+            
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <img src="img/lattecomp.jpg" alt="latte" id="latte" class="rounded-circle img-thumbnail" align="right">
+        </div>
+        <div class="col-8">
+          <p>
+            Hello world! I am Latte and I specialize in code review, team morale, and break management. 
+            <br>
+            <br>
+            I am a motivated dog who enjoys tackling new people. Often, I see myself learning a new trick or working on a new stuff animal. 
+            <br>
             <br>
             Thanks for visiting!
+            <br>
+            *This website a work in progress*
             
             <hr>
             Email: dang.derekk@gmail.com
-            
             
           </p>
         </div>
@@ -146,11 +191,91 @@
       <div class="row">
         <div class="col">
           <p>
-            <strong>Programming Languages: </strong>	Java, HTML, CSS, JavaScript, R, MatLab, DrRacket
+            <strong>Programming Languages: </strong>
+            <figure>
+              <img src="img/java.png" alt="java" class="logos">
+              <figcaption>Java</figcaption>
+            </figure>
+            <figure>
+              <img src="img/html5.png" alt="java" class="logos">
+              <figcaption>HTML5</figcaption>
+            </figure> 
+            <figure>
+              <img src="img/css.png" alt="java" class="logos">
+              <figcaption>CSS</figcaption>
+            </figure>
+            <figure>
+              <img src="img/javascript.png" alt="java" class="logos">
+              <figcaption>JavaScript</figcaption>
+            </figure> 
+            <figure>
+              <img src="img/rLogo.png" alt="java" class="logos">
+              <figcaption>R</figcaption>
+            </figure> 
+            <figure>
+              <img src="img/matlab.jpg" alt="java" class="logos">
+              <figcaption>MatLab</figcaption>
+            </figure> 
+            <figure>
+              <img src="img/drracket.png" alt="java" class="logos">
+              <figcaption>DrRacket</figcaption>
+            </figure>
             <br>
-            <strong>Tools/Technologies: </strong>Firebase, Node.js, GitHub, JQuery, AJAX, BootStrap, XML
             <br>
-            <strong>In Progress: </strong>SQL, Relational Database, C, Android Development, Linux
+            <strong>Tools/Technologies: </strong>
+            <br>
+            <figure>
+              <img src="img/firebase.png" alt="java" class="logos">
+              <figcaption>Firebase</figcaption>
+            </figure>
+            <figure>
+              <img src="img/node.png" alt="java" class="logos">
+              <figcaption>Node.js</figcaption>
+            </figure>
+            <figure>
+              <img src="img/github-logo.png" alt="java" class="logos">
+              <figcaption>GitHub</figcaption>
+            </figure>
+            <figure>
+              <img src="img/jquery.png" alt="java" class="logos">
+              <figcaption>jQuery</figcaption>
+            </figure>
+            <figure>
+              <img src="img/ajax.png" alt="java" class="logos">
+              <figcaption>AJAX</figcaption>
+            </figure>
+            <figure>
+              <img src="img/bootstrap.png" alt="java" class="logos">
+              <figcaption>BootStrap</figcaption>
+            </figure>
+            <figure>
+              <img src="img/xml.png" alt="java" class="logos">
+              <figcaption>XML</figcaption>
+            </figure>
+            <br>
+            <br>
+            <strong>In Progress: </strong>
+            <br>
+            <figure>
+              <img src="img/sql.png" alt="java" class="logos">
+              <figcaption>SQL</figcaption>
+            </figure>
+            <figure>
+              <img src="img/oracle.png" alt="java" class="logos">
+              <figcaption>Oracle Database</figcaption>
+            </figure>
+            <figure>
+              <img src="img/clogo.png" alt="java" class="logos">
+              <figcaption>C</figcaption>
+            </figure>
+            <figure>
+              <img src="img/android.png" alt="java" class="logos">
+              <figcaption>Android Development</figcaption>
+            </figure>
+            <figure>
+              <img src="img/Linux.png" alt="java" class="logos">
+              <figcaption>Linux</figcaption>
+            </figure>
           </p>
         </div>
       </div>
@@ -162,11 +287,15 @@
       <div class="row">
         <div class="col-12">
           <h3>Talking Card 
+            <a href="https://co-op-hackathon.firebaseapp.com/">
+            <img border="0" alt="link" src="img/link.png" width="34" height="34">
+            </a>
             <a href="https://github.com/editrocchio/Talking-Card">
             <img border="0" alt="github" src="img/github-logo.png" width="34" height="34">
             </a>
           </h3>
-          <p>HTML, CSS, JS, Firebase</p>
+          <h4>BCIT Hackathon 2019</h4>
+          <p>Tech Stack: HTML, CSS, JS, Firebase</p>
           <div class="col-12">
             <div id="TC_indicator" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
@@ -205,11 +334,15 @@
       <div class="row">
         <div class="col-12">
           <h3>OutFit Doesfit
+            <a href="https://outfit-doesfit.firebaseapp.com/">
+            <img border="0" alt="link" src="img/link.png" width="34" height="34">
+            </a>
             <a href="https://github.com/jcheong9/Outfit-Doesfit">
             <img border="0" alt="github" src="img/github-logo.png" width="34" height="34">
             </a>
           </h3>
-          <p>HTML, CSS, JS, Firebase</p>
+          <h4>BCIT Projects Course</h4>
+          <p>Tech Stack: HTML, CSS, JS, Firebase</p>
           <div class="col-12">
             <div id="OD_indicators" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
@@ -264,7 +397,80 @@
           </ul>
         </div>
       </div>
+      <div class="row">
+        <div class="col-12">
+          <h3>Lock Block Ltd.
+            <a href="http://www.lockblock.com/">
+            <img border="0" alt="github" src="img/lockblock.png" width="34" height="34">
+            </a>
+          </h3>
+          <ul>
+            <li>Designed prototype models by working closely with the VP of the research department to resolve client’s problems</li>
+            <li>Created technical documents and media for consumer usage abiding to company’s guidelines and standards</li>
+          </ul>
+        </div>
+      </div>
     </div>
+    		<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>Derek<span>Dang</span></h3>
+
+<!--
+				<p class="footer-links">
+					<a href="#">Home</a>
+					·
+					<a href="#">Blog</a>
+					·
+					<a href="#">Pricing</a>
+					·
+					<a href="#">About</a>
+					·
+					<a href="#">Faq</a>
+					·
+					<a href="#">Contact</a>
+				</p>
+-->
+
+				<p class="footer-company-name">Derek Dang &copy; 2019</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Vancouver</span> British Columbia, Canada</p>
+				</div>
+
+<!--				<div>
+					<i class="fa fa-phone"></i>
+					<p>+1 555 123456</p>
+				</div>-->
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:dang.derekk@gmail.com">dang.derekk@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>That's all folks</span>
+				    Contact me if you would like to talk :)
+				</p>
+
+				<div class="footer-icons">
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
