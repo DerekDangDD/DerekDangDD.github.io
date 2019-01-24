@@ -1,0 +1,65 @@
+body, html {
+height: 100%;
+}
+hr {
+margin-top: 1vh;
+margin-bottom: 1vh;
+border: 0;
+border-top: 3px solid rgba(0, 0, 0, 0.3);
+}
+html {
+scroll-behavior: smooth;
+}
+.bg {
+/* The image used */
+background-image: url("../img/af_kelowna.jpg");
+/* Full height */
+height: 100%; 
+opacity: 1;
+animation: fade 3s linear;
+/* Center and scale the image nicely */
+background-repeat: no-repeat;
+background-size: cover;
+}
+#home{
+position: relative;
+top:30vh;
+color:whitesmoke;
+text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+.carousel-control-prev-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#c900ff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-control-next-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#c900ff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+#selfie{
+width:500px;
+display:inline-block;
+opacity: 1;
+animation: fade 3s linear;
+}
+#latte{
+width:200px;
+display:inline-block;
+opacity: 1;
+animation: fade 3s linear;
+}
+@keyframes fade {
+0% { opacity: 0 }
+100% { opacity: 1}
+}
+.container{
+padding-top: 65px; 
+}
+figure {
+display: inline-block;
+text-align: center;
+margin: 5px; /* adjust as needed */
+margin-right: 20px;
+}
+figure img {
+vertical-align: top;
+height:75px;
+width:75px;
+}
