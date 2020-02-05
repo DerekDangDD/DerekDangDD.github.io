@@ -14,7 +14,7 @@ scroll-behavior: smooth;
 /* The image used */
 background-image: url("../img/af_kelowna.jpg");
 /* Full height */
-height: 100%; 
+height: 100%;
 opacity: 1;
 animation: fade 3s linear;
 /* Center and scale the image nicely */
@@ -35,6 +35,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.
 }
 #selfie{
 width:500px;
+height:300;
 display:inline-block;
 opacity: 1;
 animation: fade 3s linear;
@@ -50,7 +51,7 @@ animation: fade 3s linear;
 100% { opacity: 1}
 }
 .container{
-padding-top: 65px; 
+padding-top: 65px;
 }
 figure {
 display: inline-block;
@@ -65,4 +66,37 @@ width:75px;
 }
 #foot{
 position: static
+}
+
+/* Container for skill bars */
+.skillbar {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #4CAF50;} /* Green */
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 80px;
+  color: red;
+  outline: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 80px;
+  color: red;
+  outline: white;
+}
+
+.carousel {
+  width:640px;
+  height:360px;
 }
