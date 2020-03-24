@@ -50,8 +50,8 @@ const images = [
 
   const images_outfit = [
     {
-        original: '/assets/images/projects/Outfit/outfit_fittingrooom.png',
-        thumbnail: '/assets/images/projects/Outfit/outfit_fittingrooom.png',
+        original: '/assets/images/projects/Outfit/outfit_fittingroom.png',
+        thumbnail: '/assets/images/projects/Outfit/outfit_fittingroom.png',
     },
     {
       original: '/assets/images/projects/Outfit/outfitsizing.png',
@@ -144,7 +144,7 @@ const PortfolioLanding = () => {
                                     </div>
                                     <div className="inner">
                                         {/* Start Single Area */}
-                                        <div className="row sercice-details-content pb--80 align-items-center">
+                                        <div className="row sercice-details-content pb--80 align-items-center" style={{backgroundColor:"#F4ECF7"}}>
                                             <div className="col-lg-6 col-12">
                                                 <div className="thumb">
                                                     {/* <img className="w-100" src="" alt="Service Images"/> */}
@@ -176,7 +176,7 @@ const PortfolioLanding = () => {
                                         {/* End Single Area */}
 
                                         {/* Start Single Area */}
-                                        <div className="row sercice-details-content pb--80 align-items-center">
+                                        <div className="row sercice-details-content pb--80 align-items-center" style={{backgroundColor:"#FDEDEC"}}>
                                             <div className="col-lg-6 col-12">
                                                 <div className="thumb">
                                                     {/* <img className="w-100" src="" alt="Service Images"/> */}
@@ -186,7 +186,8 @@ const PortfolioLanding = () => {
                                             <div className="col-lg-6 col-12">
                                                 <div className="details mt_md--30 mt_sm--30">
                                                     <h4 className="title">Talking Card</h4>
-                                                    <p>Participated in the BCIT Hackathon 2019 in a random group of 5</p>
+                                                    <h5><a href="https://co-op-hackathon.firebaseapp.com/">https://co-op-hackathon.firebaseapp.com</a></h5>
+                                                    <p>Participated in the BCIT Hackathon 2019 in a random group of 5 </p>
                                                     <p>
                                                     <ul className="liststyle">
                                                         <li>Developed a quiz app for the visually impaired in a random team of 5 by learning and implementing Voice Command and Text to Speech APIs</li>
@@ -200,7 +201,7 @@ const PortfolioLanding = () => {
                                         {/* End Single Area */}
 
                                         {/* Start Single Area */}
-                                        <div className="row sercice-details-content pb--80 align-items-center">
+                                        <div className="row sercice-details-content pb--80 align-items-center" style={{backgroundColor:"#F5EEF8"}}>
                                             <div className="col-lg-6 col-12">
                                                 <div className="thumb">
                                                     {/* <img className="w-100" src="" alt="Service Images"/> */}
@@ -210,6 +211,7 @@ const PortfolioLanding = () => {
                                             <div className="col-lg-6 col-12">
                                                 <div className="details mt_md--30 mt_sm--30">
                                                     <h4 className="title">OutFit Doesfit</h4>
+                                                    <h5><a href="https://outfit-doesfit.firebaseapp.com/">https://outfit-doesfit.firebaseapp.com</a></h5>
                                                     <p>Made a web app in a team of 3 that allows users to know their clothes sizes of different brands.</p>
                                                     <p>
                                                     <ul className="liststyle">
