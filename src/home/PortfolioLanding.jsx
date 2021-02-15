@@ -108,7 +108,7 @@ const PortfolioLanding = () => {
                                         <div className={`inner ${value.textPosition}`} style={{color:"whitesmoke", textShadow:"1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000"}}>
                                             {value.category ? <span style={{color:"whitesmoke"}}>{value.category}</span> : ''}
                                             {value.title ? <h1 className="title" dangerouslySetInnerHTML={{__html: value.title}} style={{color:"whitesmoke"}}></h1> : ''}
-                                            {value.description ? <p className="description">Computer System Technology Student BCIT (On Hold<br></br>Chemical Engineering - Bachelor's Degree UBC</p> : ''}
+                                            {value.description ? <p className="description">Computer System Technology Student BCIT (On Hold)<br></br>Chemical Engineering - Bachelor's Degree UBC</p> : ''}
                                             {value.buttonText ? <div className="slide-btn"><a className="rn-button-style--2 btn-primary-color" href={`${value.buttonLink}`}>{value.buttonText}</a></div> : ''}
                                         </div>
                                     </div>
