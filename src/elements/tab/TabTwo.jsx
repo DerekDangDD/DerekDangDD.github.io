@@ -49,7 +49,7 @@ class TabsTwo extends Component{
                                                    iXp Intern Agile Developer<span> - SAP</span> May 2019 - May 2020
                                                </li>
                                                <li>
-                                                   Prodiction Manager<span> - Synergy Semiochemicals Corp.</span> July 2016 – August 2018
+                                                   Production Manager<span> - Synergy Semiochemicals Corp.</span> July 2016 – August 2018
                                                </li>
                                            </ul>
                                        </div>

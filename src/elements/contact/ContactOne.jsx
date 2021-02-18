@@ -18,7 +18,7 @@ class ContactOne extends Component{
                         <div className="col-lg-6 order-2 order-lg-1">
                             <div className="section-title text-left mb--50">
                                 <h2 className="title">Hire Me.</h2>
-                                <p className="description">I am available for full-time and intership positions. Connect with me via email or LinkedIn:
+                                <p className="description">Connect with me via email or LinkedIn:
                                     <a href="mailto:derekdangdd@gmail.com"> derekdangdd@gmail.com</a> </p>
                             </div>
                         
